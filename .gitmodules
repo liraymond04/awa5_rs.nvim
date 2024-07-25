@@ -1,0 +1,3 @@
+[submodule "tree-sitter-awa5_rs"]
+	path = tree-sitter-awa5_rs
+	url = git@github.com:liraymond04/tree-sitter-awa5_rs.git
