@@ -21,8 +21,16 @@ The plugin can be installed with your favourite Neovim plugin manager such as [l
 And setup in your configuration,
 
 ```lua
-local awa5_rs = require("awa5_rs")
+local treesitter_configs = require("nvim-treesitter.configs")
+treesitter_configs.setup({
+  -- add your other nvim-treesitter configs here
+  highlight = {
+    -- make sure this is enabled to see syntax highlighting
+    enable = true,
+  },
+})
 
+local awa5_rs = require("awa5_rs")
 -- make sure this setup is run after nvim-treesitter is already setup
 awa5_rs.setup({})
 ```
