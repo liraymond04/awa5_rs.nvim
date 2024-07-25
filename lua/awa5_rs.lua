@@ -7,8 +7,6 @@ function M.setup(config)
 
   local plugin_dir = debug.getinfo(1).source:sub(2):match("(.*/)")
 
-  vim.o.runtimepath = vim.o.runtimepath .. ',/home/liray/Documents/Programming/nvim/awa5_rs.nvim/tree-sitter-awa5_rs'
-
   -- Register the parser with the extension
   vim.cmd [[
     augroup _awa5_rs
