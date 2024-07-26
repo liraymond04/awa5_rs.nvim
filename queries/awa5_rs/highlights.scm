@@ -8,7 +8,8 @@
 (label (number) @number)
 
 ; Values
-(value (string) @string)
+(value (ascii_string) @string)
+(value (awascii_string) @string)
 (value (number) @number)
 (value (float) @float)
 
