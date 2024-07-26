@@ -1,6 +1,6 @@
 # awa5_rs.nvim
 
-Provides syntax highlighting and [Tree-sitter](https://github.com/tree-sitter/tree-sitter) support for [AWA5.RS](https://github.com/liraymond04/awa5_rs) in [Neovim](https://github.com/neovim/neovim) using the [tree-sitter-awa5_rs](https://github.com/liraymond04/tree-sitter-awa5_rs) custom Tree-sitter grammar
+Provides syntax highlighting and [Tree-sitter](https://github.com/tree-sitter/tree-sitter) support for [AWA5.RS](https://github.com/liraymond04/awa5_rs) in [Neovim](https://github.com/neovim/neovim) using the [tree-sitter-awa5_rs](https://github.com/liraymond04/tree-sitter-awa5_rs) and [tree-sitter-awatalk](https://github.com/liraymond04/tree-sitter-awatalk) custom Tree-sitter grammars
 
 The [`nvim-treesitter`](https://github.com/nvim-treesitter/nvim-treesitter) plugin needs to be installed and setup before the setup for this plugin can be run properly
 
@@ -35,12 +35,12 @@ local awa5_rs = require("awa5_rs")
 awa5_rs.setup({})
 ```
 
-You will need to restart Neovim, and it will give you some errors about the `awa5_rs` parser not being yet installed
+You will need to restart Neovim, and it will give you some errors about the `awa5_rs` and `awatalk` parsers not being yet installed
 
 To fix this error, run:
 
 ```
-:TSInstall awa5_rs
+:TSInstall awa5_rs awatalk
 ```
 
-And restart Neovim again, and syntax highlighting should now be working for files with extension `.awasm`
+And restart Neovim again, and syntax highlighting should now be working for files with extension `.awasm` and `.awa`
