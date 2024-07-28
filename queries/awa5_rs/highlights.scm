@@ -10,6 +10,9 @@
 ; Values
 (value (ascii_string) @string)
 (value (awascii_string) @string)
+(value (ascii_char) @number)
+(value (awascii_char) @number)
+(value (path) @string)
 (value (number) @number)
 (value (float) @float)
 (replacement_var) @label
