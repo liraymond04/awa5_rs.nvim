@@ -4,3 +4,6 @@
 [submodule "tree-sitter-awatalk"]
 	path = tree-sitter-awatalk
 	url = https://github.com/liraymond04/tree-sitter-awatalk.git
+[submodule "tree-sitter-awaml"]
+	path = tree-sitter-awaml
+	url = https://github.com/liraymond04/tree-sitter-awaml.git
